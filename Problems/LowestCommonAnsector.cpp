@@ -41,5 +41,7 @@ int main(){
         if(path_x[i]==path_y[i]) ans=path_x[i];
         else break;
     }
+    
     cout<<ans;
+
 }
