@@ -7,14 +7,14 @@ using namespace std;
 int dp[1005];
 int fun(int len,vector<int> &price){
     if(len==0) return 0;
-    if(dp[len]!=-1) return 0;
+    if(dp[len]!=-1) return dp[len];
     int ans=0;
     for(int lenc=1;lenc<price.size();lenc++){
         if(len-lenc>=0){
               ans=max(ans,fun(len-lenc,price)+price[lenc-1]);
         }
     }
-    return ans;
+    return dp[len]=ans;
 }
 
 
