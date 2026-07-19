@@ -4,7 +4,7 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-int dp[1005]
+int dp[1005];
 int fun(int len,vector<int> &price){
     if(len==0) return 0;
     if(dp[len]!=-1) return 0;
