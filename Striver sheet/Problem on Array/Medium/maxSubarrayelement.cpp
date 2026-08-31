@@ -1,3 +1,4 @@
+// print the maximum subarray from the given array using Kadane's algorithm. The code defines a class `Solution` with a method `maxSubArray` that takes a vector of integers as input and returns the maximum subarray. The main function demonstrates how to use this method with a sample input array.
 #include <bits/stdc++.h>
 using namespace std;
 
