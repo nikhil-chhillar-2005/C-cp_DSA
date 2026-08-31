@@ -8,11 +8,8 @@ public:
         int maxsum=nums[0];
         int currsum=nums[0];
         for(int i=1;i<nums.size();i++){
-            currsum=currsum+nums[i];
+            currsum=max(nums[i],currsum+nums[i]);
             maxsum=max(maxsum,currsum);
-            if(currsum<0){
-                currsum=0;
-            }
         }
         return maxsum;
     }
